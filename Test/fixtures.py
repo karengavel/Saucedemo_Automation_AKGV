@@ -13,7 +13,7 @@ URL = "http://0.0.0.0:4723/wd/hub"
 
 
 @pytest.fixture
-def driver(request):
+def driver():
     wait_seconds = 5
     driver = webdriver.Remote(URL, DESIRED_CAPABILITIES)
     driver.implicitly_wait(wait_seconds)
