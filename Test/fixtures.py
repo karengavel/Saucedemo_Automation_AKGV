@@ -1,4 +1,5 @@
 import pytest
+import yaml
 from appium import webdriver
 
 DESIRED_CAPABILITIES = {
@@ -10,6 +11,18 @@ DESIRED_CAPABILITIES = {
 }
 
 URL = "http://0.0.0.0:4723/wd/hub"
+
+DATA_PATH = "../utils/data.yml"
+
+
+#def loadData(path):
+    #with open(path) as data:
+        #return yaml.safe_load(data)
+
+
+#@pytest.fixture(params=loadData(DATA_PATH))
+#def data(request):
+    #return request.param
 
 
 @pytest.fixture
