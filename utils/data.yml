@@ -1,11 +1,1 @@
----
-- user_one: "bob@example.com"
-  pass_one: "10203040"
-- user_two: "bob@example"
-  pass_two: "10203040"
-- user_three: ""
-  pass_three: "10203040"
-- user_four: "bob@example.com"
-  pass_four: ""
-  ...
-#user succer user fail pass
+

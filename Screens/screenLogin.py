@@ -6,35 +6,11 @@ class screenLogin(BaseScreen):
 
     def __init__(self, driver):
         super().__init__(driver)
+        self.txtbox_username = (AppiumBy.ACCESSIBILITY_ID, "Username input field")
+        self.txtbox_password = (AppiumBy.ACCESSIBILITY_ID, "Password input field")
+        self.btn_login = (AppiumBy.ACCESSIBILITY_ID, "Login button")
 
-    user = "bob@example.com"
-    password = "10203040"
-
-    def ingresarUsuario(self, user):
-        self.driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Username input field").send_keys(user)
-
-    def ingresarContrasena(self, password):
-        self.driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Password input field").send_keys(password)
-
-    def botonLogin(self):
-        self.driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Login button").click()
-
-    def loginExitoso(self):
-        exito = self.driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="products screen")
-        return exito
-
-    def loginConCredencialesIncorrectas(self):
-        mensajeValidacion = self.driver.find_elements(by=AppiumBy.ANDROID_UIAUTOMATOR,
-                                                      value=".text(\"Provided credentials do not match "
-                                                            "any user in "
-                                                            "this service.\")")
-        return mensajeValidacion
-
-    def loginSinUsuario(self):
-        sinUsuario = self.driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Username-error-message")
-        return sinUsuario
-
-    def loginSinPassword(self):
-        sinPassword = self.driver.find_elements(by=AppiumBy.ANDROID_UIAUTOMATOR, value=".text(\"Password is "
-                                                                                       "required\")")
-        return sinPassword
+    def login(self, username, password):
+        self.driver.find_element(*self.txtbox_username).send_keys(username)
+        self.driver.find_element(*self.txtbox_password).send_keys(password)
+        self.driver.find_element(*self.btn_login).click()

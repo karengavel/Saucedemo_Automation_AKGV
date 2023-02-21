@@ -1,4 +1,4 @@
-from appium.webdriver.common.appiumby import AppiumBy
+from appium.webdriver.common.appiumby import AppiumBy as By
 
 from Screens.baseScreen import BaseScreen
 
@@ -7,6 +7,8 @@ class screenMenu(BaseScreen):
 
     def __init__(self, driver):
         super().__init__(driver)
+        self.btn_login = (By.ACCESSIBILITY_ID, "menu item log in")
 
     def opcionLogin(self):
-        self.driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="menu item log in").click()
+        self.driver.find_element(*self.btn_login).click()
+
