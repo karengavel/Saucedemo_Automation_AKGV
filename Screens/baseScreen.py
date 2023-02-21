@@ -11,7 +11,7 @@ class BaseScreen:
 
     def existe_el_elemento(self, *locator):
         try:
-            self.get_element(*locator)
+            self.encuentra_elemento(*locator)
             return True
         except NoSuchElementException:
             return False

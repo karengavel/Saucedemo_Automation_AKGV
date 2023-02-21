@@ -10,21 +10,7 @@ DESIRED_CAPABILITIES = {
     "appium:app": "/Users/agamav/Desktop/Training/Saucedemo_Automation_AKGV/App/saucedemo.apk"
 }
 
-DATA_PATH = "../utils/data.yml"
-
 URL = "http://0.0.0.0:4723/wd/hub"
-
-
-# Función que lee el archivo yaml.
-def load_data(path):
-    with open(path) as data:
-        return yaml.safe_load(data)
-
-
-# Fixture. Carga el archivo con los datos.
-@pytest.fixture(params=load_data(DATA_PATH))
-def data(request):
-    return request.param
 
 
 @pytest.fixture
