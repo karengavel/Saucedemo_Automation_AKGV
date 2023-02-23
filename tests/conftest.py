@@ -1,5 +1,4 @@
 import pytest
-import yaml
 from appium import webdriver
 
 DESIRED_CAPABILITIES = {
@@ -7,7 +6,9 @@ DESIRED_CAPABILITIES = {
     "appium:platformVersion": "11",
     "appium:deviceName": "PixelXL",
     "appium:automationName": "UiAutomator2",
-    "appium:app": "/Users/agamav/Desktop/Training/Saucedemo_Automation_AKGV/App/saucedemo.apk"
+    "appium:app":
+        "/Users/agamav/Desktop/Training/"
+        "Saucedemo_Automation_AKGV/App/saucedemo.apk"
 }
 
 URL = "http://0.0.0.0:4723/wd/hub"

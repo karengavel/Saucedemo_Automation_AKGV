@@ -11,4 +11,3 @@ class screenMenu(BaseScreen):
 
     def opcionLogin(self):
         self.driver.find_element(*self.btn_login).click()
-
