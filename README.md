@@ -5,6 +5,7 @@ utilizando las siguientes herramientas:
 - Allure 
 - Flake8 
 ## Estructura del proyecto 
+```` 
 ├── Saucedemo_Automation_AKGV
     ├── App
         ├── saucedemo.apk
@@ -22,6 +23,7 @@ utilizando las siguientes herramientas:
     ├── venv
     ├── pytest.ini
     ├── README.md
+```` 
 ## Requerimientos previos
 Se requiere tener instalado:
 - Android Studio 
