@@ -4,6 +4,24 @@ utilizando las siguientes herramientas:
 - Pytest
 - Allure 
 - Flake8 
+## Estructura del proyecto 
+├── Saucedemo_Automation_AKGV
+    ├── App
+        ├── saucedemo.apk
+    ├── reportes
+    ├── screens
+        ├── baseScreen.py
+        ├── screenLogin.py
+        ├── screenMenu.py
+        ├── screenProduct.py
+    ├── tests
+        ├── conftest.py
+        ├── test_iniciosesion.py
+    ├── utils
+        ├── actionsLibrary.py
+    ├── venv
+    ├── pytest.ini
+    ├── README.md
 ## Requerimientos previos
 Se requiere tener instalado:
 - Android Studio 
@@ -51,13 +69,21 @@ En el archivo `pytest.ini` se deberán agregar los datos de los usuarios necesar
  pytest 
 ```
 #### Ejecutar pruebas de regresión
+- Ejecución vía Terminal
 ```bash
   pytest -m regression
 ```
+- Ejecución mediante Run configuration 
+![image](https://user-images.githubusercontent.com/28547374/221058124-4d2a4ec2-f107-4ec1-9ea3-63c4367dcc49.png)
+
 #### Ejecutar pruebas de humo
+- Ejecución vía Terminal
 ```bash
   pytest -m smoke
 ```
+- Ejecución mediante Run configuration 
+![image](https://user-images.githubusercontent.com/28547374/221058210-40e188fb-e2aa-45a3-a48b-8ac33557d143.png)
+
 ##Generar reporte con allure
 Generación de reportes:
 ```bash
