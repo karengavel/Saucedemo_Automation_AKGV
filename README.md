@@ -71,7 +71,7 @@ Generación de reportes por mark de la prueba
  pytest -m smoke  --alluredir=reportes ./tests
  allure serve reportes
 ```
-*Nota: al ejecutar al generar el reporte, si se requiere generar uno distinto rquiere de eliminar todos los archivos de la carpeta reportes*
+*Nota: al ejecutar al generar el reporte, si se requiere generar uno distinto requiere de eliminar todos los archivos de la carpeta reportes*
 ## Análisis de código estático 
 
 Se utiliza la herramienta flake8 para el análisis de código estático:
