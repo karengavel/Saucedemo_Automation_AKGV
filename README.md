@@ -33,6 +33,7 @@ Para  este proyecto se utilizo un emulador Pixel XL con android 11, en caso de r
         "ruta donde se encuentra el apk"
 }
 ```
+*Nota: se debera editar la ruta donde se encuentra ubicada la app*
 ## Usuarios de prueba
 En el archivo `pytest.ini` se deberán agregar los datos de los usuarios necesarios para las pruebas, completando la siguiente información:
 ```bash
@@ -46,7 +47,7 @@ En el archivo `pytest.ini` se deberán agregar los datos de los usuarios necesar
 ```
 ## Ejecución de tests 
 #### Ejecutar todos los tests de inicio de sesión
-
+```bash
  pytest 
 ```
 #### Ejecutar pruebas de regresión
@@ -57,20 +58,21 @@ En el archivo `pytest.ini` se deberán agregar los datos de los usuarios necesar
 ```bash
   pytest -m smoke
 ```
-#### Ejecutar generar reporte con allure
+##Generar reporte con allure
 Generación de reportes:
 ```bash
-  py.test --alluredir=reportes ./tests
+  pytest --alluredir=reportes ./tests
   
   allure serve reportes
 ```
-###Generación de reportes por mark de la prueba
+Generación de reportes por mark de la prueba
 
 ```bash
  pytest -m smoke  --alluredir=reportes ./tests
  allure serve reportes
 ```
-### Análisis de código estático 
+*Nota: al ejecutar al generar el reporte, si se requiere generar uno distinto rquiere de eliminar todos los archivos de la carpeta reportes*
+## Análisis de código estático 
 
 Se utiliza la herramienta flake8 para el análisis de código estático:
 ```bash

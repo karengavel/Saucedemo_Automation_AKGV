@@ -7,7 +7,7 @@ DESIRED_CAPABILITIES = {
     "appium:deviceName": "PixelXL",
     "appium:automationName": "UiAutomator2",
     "appium:app":
-        "ruta"
+        "ruta donde se encuentra el apk"
 }
 
 URL = "http://0.0.0.0:4723/wd/hub"
