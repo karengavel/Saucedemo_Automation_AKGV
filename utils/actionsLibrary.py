@@ -1,9 +1,9 @@
 import secrets
 import string
 
-from Screens.screenLogin import screenLogin
-from Screens.screenMenu import screenMenu
-from Screens.screenProduct import screenProduct
+from screens.screenLogin import screenLogin
+from screens.screenMenu import screenMenu
+from screens.screenProduct import screenProduct
 
 
 def base_login(driver, username, password):

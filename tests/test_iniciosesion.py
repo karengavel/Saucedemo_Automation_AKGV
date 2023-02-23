@@ -1,7 +1,7 @@
 import os
 import pytest
-from Screens.screenProduct import screenProduct
-from Screens.screenLogin import screenLogin
+from screens.screenProduct import screenProduct
+from screens.screenLogin import screenLogin
 from utils.actionsLibrary import generacion_aleatoria_password, base_login
 
 

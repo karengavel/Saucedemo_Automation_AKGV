@@ -7,8 +7,7 @@ DESIRED_CAPABILITIES = {
     "appium:deviceName": "PixelXL",
     "appium:automationName": "UiAutomator2",
     "appium:app":
-        "/Users/agamav/Desktop/Training/"
-        "Saucedemo_Automation_AKGV/App/saucedemo.apk"
+        "ruta"
 }
 
 URL = "http://0.0.0.0:4723/wd/hub"
