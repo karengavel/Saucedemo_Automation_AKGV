@@ -76,7 +76,7 @@ En el archivo `pytest.ini` se deberán agregar los datos de los usuarios necesar
   pytest -m regression
 ```
 - Ejecución mediante Run configuration 
-![image](https://user-images.githubusercontent.com/28547374/221059212-e48385f0-938b-4222-8ff1-a903248fece4.png)
+![image](https://user-images.githubusercontent.com/28547374/221060922-552a406f-5dbc-4069-a845-cbafa95bbe03.png)
 
 #### Ejecutar pruebas de humo
 - Ejecución vía Terminal
@@ -84,7 +84,7 @@ En el archivo `pytest.ini` se deberán agregar los datos de los usuarios necesar
   pytest -m smoke
 ```
 - Ejecución mediante Run configuration 
-![image](https://user-images.githubusercontent.com/28547374/221059424-f70d8545-1afd-4edf-b864-a66a38cb861b.png)
+![image](https://user-images.githubusercontent.com/28547374/221060873-59902e9e-cad2-492e-b047-58bdde542a0d.png)
 
 ##Generar reporte con allure
 Generación de reportes:
