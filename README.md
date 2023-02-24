@@ -84,7 +84,7 @@ En el archivo `pytest.ini` se deberán agregar los datos de los usuarios necesar
   pytest -m smoke
 ```
 - Ejecución mediante Run configuration 
-![image](https://user-images.githubusercontent.com/28547374/221058950-a8741cd9-f156-4224-9b3f-050d747901da.png)
+![image](https://user-images.githubusercontent.com/28547374/221059424-f70d8545-1afd-4edf-b864-a66a38cb861b.png)
 
 ##Generar reporte con allure
 Generación de reportes:
